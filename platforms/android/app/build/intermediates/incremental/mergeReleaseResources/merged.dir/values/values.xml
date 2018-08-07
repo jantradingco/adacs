@@ -108,8 +108,8 @@
     <string name="default_notification_channel_id">fcm_default_channel</string>
     <string name="default_notification_channel_name">Default</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
-    <string name="google_api_key">AIzaSyAHOdbFZKQIKgd3NQQ0Qe2qLkM53xJiC2I</string>
-    <string name="google_app_id">1:407398588339:android:80db1c7a94f50023</string>
+    <string name="google_api_key">@string/google_api_key</string>
+    <string name="google_app_id">@string/google_app_id</string>
     <string name="launcher_name">@string/app_name</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="tagmanager_preview_dialog_button">Continue</string>

@@ -1,4 +1,4 @@
-#Tue Aug 07 16:24:31 JST 2018
-base.0=C\:\\Users\\aj\\project\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
+#Tue Aug 07 22:10:43 CST 2018
+base.0=C\:\\Users\\ajpc\\adacsall\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
 renamed.0=classes.dex
-file.0=C\:\\Users\\aj\\project\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0\\classes.dex
+file.0=C\:\\Users\\ajpc\\adacsall\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0\\classes.dex

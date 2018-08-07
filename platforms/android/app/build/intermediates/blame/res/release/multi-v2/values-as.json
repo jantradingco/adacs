@@ -1,6 +1,45 @@
 {
     "logs": [
         {
+            "outputFile": "C:\\Users\\ajpc\\adacsall\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-as\\values-as.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ajpc\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-tagmanager-16.0.1.aar\\6f5a4b1c885fc50c026926b2a20aace2\\res\\values-as\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6",
+                        "startColumns": "0,0,0",
+                        "startOffsets": "208,308,427",
+                        "endColumns": "99,118,96",
+                        "endOffsets": "307,426,523"
+                    },
+                    "to": {
+                        "startLines": "3,4,5",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "159,263,386",
+                        "endColumns": "103,122,100",
+                        "endOffsets": "258,381,482"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ajpc\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-messaging-17.1.0.aar\\922e352164446edb643927066e32363d\\res\\values-as\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "205",
+                        "endColumns": "99",
+                        "endOffsets": "304"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "103",
+                        "endOffsets": "154"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\aj\\project\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-as\\values-as.xml",
             "map": [
                 {
