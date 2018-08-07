@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<root>
+    <jp>       
+        
+        <auctions>オークション</auctions>
+        <settings>設定</settings>
+        <change_password>パスワード更新</change_password>
+        <heading2>台数</heading2>
+        <headingrange>選台数</headingrange>
+        <heading3>並び替え方法:出品番号</heading3>
+        <show_button>表示</show_button>
+        <reset_button>全てをリセットする</reset_button>
+        <reset_button_confirm>全てをリセットするのはメモリクリアと同じです。全ての変更が削除されます。宜しいでしょうか？</reset_button_confirm>                
+        <lotno_title>出品番号</lotno_title>
+        <model_title>車名</model_title>
+        <bid_title>入札金額</bid_title>
+        <remarks_title>リマーク</remarks_title>
+        <type_title>型式</type_title>
+        <shift_title>シフト</shift_title>
+        <year_title>年式</year_title>
+        <grade_title>グレード</grade_title>
+        <color_title>色</color_title>
+        <km_title>走行距離</km_title>
+        <rate_title>評価</rate_title>
+        <intext_title>内外</intext_title>
+        <ac_title>冷房</ac_title>
+        <cc_title>排気量</cc_title>
+        <shaken_title>車検</shaken_title>
+        <country_title>向け地</country_title>
+        <bidder_title>入札者</bidder_title>
+        <time_title>開始時間</time_title>
+        <please_signin>ログインする</please_signin>
+        <rememberme>保存する</rememberme>
+        <signin_button>ログイン</signin_button>
+        <options_lab>設定</options_lab>
+        <language>言語</language>
+        <disable_lab>自動メモリクリア機能を無効にする</disable_lab>
+        <manual_clear>メモリを削除する</manual_clear>
+        <now_clear>削除</now_clear>
+        <clear_mem>メモリを削除する</clear_mem>
+        <change_pass_title>パスワード変更</change_pass_title>
+        <username_lab_signin>ユーザー名</username_lab_signin>
+        <cur_username_lab>ユーザー名</cur_username_lab>        
+        <username>ユーザー名</username>
+        <cur_username>ユーザー名</cur_username>        
+        <password_lab_signin>パスワード</password_lab_signin>
+        <password>パスワード</password>        
+        <cur_password_lab>パスワード</cur_password_lab>
+        <cur_password>パスワード</cur_password>
+        <new_password_lab>新パスワード</new_password_lab>
+        <new_password>新パスワード</new_password>
+        <submit>提出</submit>
+        <price_adjustment>値段調整</price_adjustment>
+        <timelimit_adjustment_label>最後のデータ入力時間。この後のデータは "NEW" か "Updated"「値段変更」になります。日本時間より時差は4。</timelimit_adjustment_label>
+        <time_limit_sample>例: デフォルトは is 1で、日本朝5:00と言う事。それで、3を入力すると朝7:00と言う意味</time_limit_sample>
+        <price_display_lab>値段表示スタイル：5000の代わりに0.5</price_display_lab>
+        <auctions_modal_label>オークションを選択してください</auctions_modal_label>        
+        <bad_range>選択した範囲内にデータがありません</bad_range>
+        <bad_login>ユーザー名またはパスワードが違います</bad_login>
+        <bad_password>新しいパスワードは少なくとも6文字以上でなければなりません</bad_password>
+        <try_again>失敗しました。もう一度お願いします</try_again>
+        <camera_modal_title>写真を撮る/ギャラリーからアップロード</camera_modal_title>
+    </jp>
+    <en>        
+        <auctions>Auctions</auctions>
+        <settings>Settings</settings>
+        <change_password>Change Password</change_password>
+        <heading2>Number of lots</heading2>
+        <headingrange>Lots in selection range</headingrange>
+        <heading3>Sorting by lot numbers</heading3>
+        <show_button>Show</show_button>
+        <reset_button>Reset All</reset_button>        
+        <reset_button_confirm>Reset all is the same as clearing the memory. This action will remove all recent changes. Is that OK?</reset_button_confirm>                
+        <lotno_title>Lot no</lotno_title>
+        <model_title>Model</model_title>
+        <bid_title>Bid</bid_title>
+        <remarks_title>Remarks</remarks_title>
+        <type_title>Type</type_title>
+        <shift_title>Shift</shift_title>
+        <year_title>Year</year_title>
+        <grade_title>Grade</grade_title>
+        <color_title>Color</color_title>
+        <km_title>KM</km_title>
+        <rate_title>Rate</rate_title>
+        <intext_title>int/ext</intext_title>
+        <ac_title>AC</ac_title>
+        <cc_title>CC</cc_title>
+        <shaken_title>Shaken</shaken_title>
+        <country_title>Country</country_title>
+        <bidder_title>Bidder</bidder_title>
+        <time_title>Start time</time_title>
+        <please_signin>Please, sign in</please_signin>
+        <rememberme>Remember me</rememberme>
+        <signin_button>Sign in</signin_button>
+        <options_lab>Settings</options_lab>
+        <language>Language</language>
+        <disable_lab>Disable automatic memory clear</disable_lab>
+        <manual_clear>Clear memory now</manual_clear>
+        <now_clear>Clear</now_clear>
+        <clear_mem>Clear memory now</clear_mem>
+        <change_pass_title>Change Password</change_pass_title>
+        <username>Username</username>
+        <password>Password</password>
+        <username_lab_signin>Username</username_lab_signin>
+        <cur_username_lab>Username</cur_username_lab>        
+        <username>Username</username>
+        <cur_username>Username</cur_username>        
+        <password_lab_signin>Password</password_lab_signin>
+        <password>Password</password>        
+        <cur_password_lab>Password</cur_password_lab>
+        <cur_password>Password</cur_password>
+        <new_password_lab>New password</new_password_lab>
+        <new_password>New password</new_password>
+        <new_pass>New password</new_pass>
+        <submit>Submit</submit>
+        <price_adjustment>price adjustment</price_adjustment>
+        <timelimit_adjustment_label>Finish time after which any entry will be considered as "NEW" or "Updated"(price change). Displayed in hours. -4 hours from Japan time.</timelimit_adjustment_label>
+        <time_limit_sample>Example: Default is 1 and it is equal to 5:00(AM) in Japan. Enter 3 to make it 7:00(AM)</time_limit_sample>
+        <price_display_lab>Price display style: 0.5 (instead of 5000)</price_display_lab>
+        <auctions_modal_label>Select an Auction</auctions_modal_label>
+        <bad_range>There is no data within the selected range</bad_range>
+        <bad_login>Username or password is wrong</bad_login>
+        <bad_password>New password must be at least 6 characters long</bad_password>
+        <try_again>Task failed. Try again</try_again>
+        <camera_modal_title>Take or upload photos</camera_modal_title>
+    </en>
+</root>

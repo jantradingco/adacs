@@ -1,0 +1,122 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-firebase@^1.0.0",
+        "scope": null,
+        "escapedName": "cordova-plugin-firebase",
+        "name": "cordova-plugin-firebase",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "C:\\Users\\aj\\adacs"
+    ]
+  ],
+  "_from": "cordova-plugin-firebase@>=1.0.0 <2.0.0",
+  "_id": "cordova-plugin-firebase@1.0.5",
+  "_inCache": true,
+  "_location": "/cordova-plugin-firebase",
+  "_nodeVersion": "8.9.3",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-firebase_1.0.5_1526154896350_0.4525016129980386"
+  },
+  "_npmUser": {
+    "name": "soumak77",
+    "email": "bsoumakian@gmail.com"
+  },
+  "_npmVersion": "2.15.12",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-firebase@^1.0.0",
+    "scope": null,
+    "escapedName": "cordova-plugin-firebase",
+    "name": "cordova-plugin-firebase",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-firebase/-/cordova-plugin-firebase-1.0.5.tgz",
+  "_shasum": "b37b3015146709bbccc0dfc818461909b38cec8a",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-firebase@^1.0.0",
+  "_where": "C:\\Users\\aj\\adacs",
+  "author": {
+    "name": "Robert Arnesson"
+  },
+  "bugs": {
+    "url": "https://github.com/arnesson/cordova-plugin-firebase/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-firebase",
+    "platforms": [
+      "android",
+      "ios",
+      "browser"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova plugin for Google Firebase",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "b37b3015146709bbccc0dfc818461909b38cec8a",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-firebase/-/cordova-plugin-firebase-1.0.5.tgz",
+    "fileCount": 599,
+    "unpackedSize": 304029141,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa90aVCRA9TVsSAnZWagAA7qoP/3wR1sncDaYvjh37Dg6L\nVmCdk3zcgy53vudk8nc6hJssKBAFhOLQ/QGcNkd+dx8WWXR8UUakU+C3YUVe\niRFCQ0GfZkbckTFOBtAJDIKOhuT4SyqhLklM2ym+BnDZXEEc3PQPgwAfpN3s\noFr6y9hMC1WBdSpFWNcwHuCllHFjQgTVx19IN32FdEJZQy8Fkn0fLgGdHM2F\np7g4sGy+xAyev6VtmHRXy7T6Z8fMPMnHu9AVIyAHsda/HoCjPiXc1/o39zPi\nyI2K88WohUg2h74AOYkwLErfogUT2LsGgbsMRwhdNPBkDa/RUmRjWY1C2m7e\nJMCpYPoEnjbF9HydxE1ovRIAFIF9FhhHT73TK6wcV+0R18+MMPFRYKHPOZy2\nOufm4yxarzNM2i0RpmPjrWpsffmO5NU43+BAX+Zx5WKcA1j8G1mL7zfsShEf\nuxKnYIJIF2RZbWW7CGtjCgIIQ7YXGmnWvrTZf2eACk67WuS88TZxLc6l0g9H\n0G2FytKQIoyJ8NLKnlBV8fDKHbUrabw5W2SI6IFUjcHPyVbxbNzoz/8cGHAV\nyTwOZjhnK7FdLykHHQHl82iRc1ipf8SqqPRinXG9PlhF3ou2GwNyaxoRPiDZ\nb60U/fVFlJIkBuBhfWJ0FhIORJXw+Ly4WHjo7IEkDdhjZ40+OrhehDQd7W1U\nEOxi\r\n=5me4\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "gitHead": "8c69fc57b01133fe32c053d2071a947f397f1cae",
+  "homepage": "https://github.com/arnesson/cordova-plugin-firebase#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-browser",
+    "firebase",
+    "push",
+    "notifications",
+    "phone auth"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "arnesson",
+      "email": "robert.arnesson@gmail.com"
+    },
+    {
+      "name": "soumak77",
+      "email": "bsoumakian@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-firebase",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnesson/cordova-plugin-firebase.git"
+  },
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish",
+    "test": "npm run test:ios && npm run test:android && npm run test:browser",
+    "test:android": "npm run test:cordova@6.5.0:android@6.4.0 && npm run test:cordova@7.1.0:android@7.1.0 && npm run test:cordova@8.0.0:android@7.1.0",
+    "test:browser": "npm run test:cordova@6.5.0:browser@6.4.0 && npm run test:cordova@7.1.0:browser@7.1.0 && npm run test:cordova@8.0.0:browser@7.1.0",
+    "test:cordova@6.5.0:android@6.4.0": "sh ./test/test-default.sh 6.5.0 android 6.4.0 && sh ./test/test-with-2-plugins.sh 6.5.0 android 6.4.0 cordova-plugin-request-location-accuracy cordova-android-play-services-gradle-release",
+    "test:cordova@6.5.0:browser@5.0.3": "sh ./test/test-default.sh 6.5.0 browser 5.0.3",
+    "test:cordova@6.5.0:ios@4.5.4": "sh ./test/test-default.sh 6.5.0 ios 4.5.4",
+    "test:cordova@7.1.0:android@7.1.0": "sh ./test/test-default.sh 7.1.0 android 7.1.0 && sh ./test/test-with-2-plugins.sh 7.1.0 android 7.1.0 cordova-plugin-request-location-accuracy cordova-android-play-services-gradle-release",
+    "test:cordova@7.1.0:browser@5.0.3": "sh ./test/test-default.sh 7.1.0 browser 5.0.3",
+    "test:cordova@7.1.0:ios@4.5.4": "sh ./test/test-default.sh 7.1.0 ios 4.5.4",
+    "test:cordova@8.0.0:android@7.1.0": "sh ./test/test-default.sh 8.0.0 android 7.1.0 && sh ./test/test-with-2-plugins.sh 8.0.0 android 7.1.0 cordova-plugin-request-location-accuracy cordova-android-play-services-gradle-release",
+    "test:cordova@8.0.0:browser@5.0.3": "sh ./test/test-default.sh 8.0.0 browser 5.0.3",
+    "test:cordova@8.0.0:ios@4.5.4": "sh ./test/test-default.sh 8.0.0 ios 4.5.4",
+    "test:ios": "npm run test:cordova@6.5.0:ios@4.5.4 && npm run test:cordova@7.1.0:ios@4.5.4 && npm run test:cordova@8.0.0:ios@4.5.4",
+    "version": "node ./bump-version.js && git add -A plugin.xml"
+  },
+  "version": "1.0.5"
+}

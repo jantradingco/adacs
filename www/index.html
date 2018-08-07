@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+        <script src="components/loader.js"></script>        
+        <script src="main.js"></script>
+        <script src="auction_data_module.js"></script>
+        <script src="local_data_mobid.js"></script>
+        <script src="lib/onsenui/js/onsenui.min.js"></script>
+        <link rel="stylesheet" href="components/loader.css">
+        <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+        <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script>
+            ons.ready(function () {
+                console.log("UI is ready");
+
+                //get_auction_names();
+            });
+        </script>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <ons-splitter>
+        <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
+            <ons-page>
+                <ons-list class="list">
+                    <ons-list-item id="date_picker" onclick="show_calendar()" tappable class="list-item">
+                        <div class="center">
+                            <ons-row>
+                                <ons-col>Selected Date:</ons-col>
+                                <ons-col id="selected_date"></ons-col>
+                            </ons-row>
+                        </div>
+                    </ons-list-item>
+                    <ons-list-item  id="auction_but" onclick="fn.load('auctions.html'); get_auction_names()" tappable class="list-item">
+                        <div class="center">
+                            Auctions
+                        </div>
+                    </ons-list-item>
+                    <ons-list-item id="settings_but" onclick="fn.load('settings.html')" tappable class="list-item">
+                        <div class="center">
+                            Settings
+                        </div>
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('password.html')" tappable class="list-item">
+                        <div class="center">
+                            Change password
+                        </div>
+                    </ons-list-item>
+                    <ons-list-item  id="changeuser_but" onclick="fn.load('loginpage.html')" tappable class="list-item">
+                        <div class="center">
+                            Change user
+                        </div>
+                    </ons-list-item>
+                    <hr>
+                    <ons-list-item onclick="fn.load('all')" tappable class="list-item" id="new_but">
+                        <div class="center">
+                            All
+                        </div>
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('done')" tappable class="list-item Done">
+                        <div class="center">
+                            <ons-icon icon="md-check"></ons-icon>
+
+                        </div>
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('ask')" tappable class="list-item ASK">
+                        <div class="center">
+                            <ons-icon icon="md-help"></ons-icon>
+
+                        </div>
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('cancel')" tappable class="list-item Cancel">
+                        <div class="center">
+                            <ons-icon icon="md-close-circle" ></ons-icon>
+
+                        </div>
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('new')" tappable class="list-item New">
+                        <div class="center">
+                            <ons-icon icon="ion-speedometer" ></ons-icon>
+
+                        </div>
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('updated')" tappable class="list-item Updated">
+                        <div class="center">
+                            <ons-icon icon="md-comment-edit" ></ons-icon>
+                        </div>
+                    </ons-list-item>
+                    
+
+                </ons-list>
+            </ons-page>
+        </ons-splitter-side>
+        <ons-splitter-content id="content" page="loginpage.html">
+
+
+        </ons-splitter-content>
+        <ons-splitter-mask style="opacity: 0; display: none;"></ons-splitter-mask>
+    </ons-splitter>
+
+
+    <template id="loginpage.html">
+        <ons-page id="loginpage">
+            <ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button onclick="fn.open()" class="toolbar-button">
+                        <ons-icon icon="md-menu"></ons-icon>
+                    </ons-toolbar-button>
+                </div><div class="center">
+                    Login
+                </div><div class="right"></div>
+            </ons-toolbar>
+                <div class="page__background"></div>
+                <div class="page__content">
+
+                <p style="text-align: center; opacity: 0.6; padding-top: 20px;">
+                    Swipe right to open the menu!
+                </p>
+                </ons-toolbar>
+                <div style="text-align: center; margin-top: 30px;">
+
+                    <p>
+                    <ons-input id="username" modifier="underbar" placeholder="Username" float></ons-input>
+                    </p>
+                    <p>
+                    <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+                    </p>
+                    <p style="margin-top: 30px;">
+                    <ons-button onclick="login()">Sign in</ons-button>
+                    </p>                
+
+                </div>
+                </div>
+        </ons-page>
+    </template>
+
+    <template id="auctions.html">
+        <ons-page id="auctions">
+            <ons-toolbar>
+                <div class="left toolbar__left">
+                    <ons-toolbar-button onclick="fn.open()" class="toolbar-button">
+                        <ons-icon icon="md-menu" class="ons-icon zmdi zmdi-menu"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+                <div class="center toolbar__center toolbar__title">
+                    Auctions
+                </div>                
+            </ons-toolbar>
+            <div class="page__background"></div><div class="page__content">
+
+                <p style="text-align: center; opacity: 0.6; padding-top: 20px;">
+                    Swipe right to open the menu!
+                </p>                
+                </ons-toolbar>
+                <div class="center-content">
+
+                    <ons-select select-id="auction_names" class="center">
+                        <select class="select-input">
+
+                        </select>
+                    </ons-select>
+
+                    <div class="center-content">
+                        <ons-input 
+                            type="number" 
+                            placeholder="From"                     
+                            value="1" 
+                            onfocus="selectAll(event)" 
+                            onchange="setRange()" 
+                            id="start_index">
+                        </ons-input>
+                        <ons-input 
+                            type="number" 
+                            placeholder="To"                     
+                            value="99999" 
+                            onfocus="selectAll(event)" 
+                            onchange="setRange()" 
+                            id="end_index">
+                        </ons-input>
+
+                    </div>
+                    <ons-button id="search-range" onclick="show_range()">Search</ons-button>
+
+                </div>
+
+
+        </ons-page>
+    </template>
+
+    <template id="main.html">
+        <ons-page id="main">
+            <ons-toolbar>
+                <div class="left toolbar__left">
+                    <ons-toolbar-button onclick="fn.open()" class="toolbar-button">
+                        <ons-icon icon="md-menu" class="ons-icon zmdi zmdi-menu"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+                <div class="toolbar__left" id="previous_button">
+                    <span class="toolbar-button" onclick="next_page('prev')">Prev</span>
+                </div>
+                <div class="center">
+                    <span id="heading2">Main</span>
+                </div>
+                <div class="toolbar__right" id="next_button">
+                    <span class="toolbar-button" onclick="next_page('next')">Next</span>
+                </div>
+            </ons-toolbar>
+
+            <div class="carlist" style="display: block">
+
+                <ons-list id="main_table">
+
+
+
+                </ons-list>
+            </div>
+        </ons-page>
+    </template>
+
+    <template id="settings.html">
+        <ons-page id="settings">
+            <ons-toolbar>
+                <div class="left toolbar__left">
+                    <ons-toolbar-button onclick="fn.open()" class="toolbar-button">
+                        <ons-icon icon="md-menu" class="ons-icon zmdi zmdi-menu"></ons-icon>
+                    </ons-toolbar-button>
+                </div><div class="center toolbar__center toolbar__title">
+                    Settings
+                </div>
+                <div class="right toolbar__right"></div>
+            </ons-toolbar>
+            <div class="page__background">                
+            </div>
+            <div class="page__content">                
+
+                <ons-row>                    
+                    <ons-col>
+                        <ons-list-item modifier="material">
+                            <div class="center">
+                                Price format (normal)
+                            </div>
+                            <div class="right">
+                                <ons-switch  id="price_display" onchange="set_price_display_style(event)" modifier="material">                               
+
+                                </ons-switch>
+                            </div>
+                        </ons-list-item>
+
+
+
+                    </ons-col>
+                </ons-row>
+                <ons-row>
+                    <ons-col>
+
+                        <label for="price-adjuster" style="margin-left: 16px">Price adjustment</label>
+
+                        <ons-input
+                            input-id="price-adjuster"
+                            type="number"
+                            placeholder="0"
+                            min="0"
+                            max="100000" 
+                            id="price_adjustment"
+                            style="float:right; padding-right: 10px;"
+                            onchange="set_priceadjuster(event)">
+                        </ons-input>
+                    </ons-col>
+                </ons-row>
+                <ons-row>
+                    <ons-col>                
+                        <label for="timelimit_adjustment" style="margin-left: 16px">Time adjustment</label>
+                        <ons-input 
+                            input-id="timelimit_adjustment" 
+                            type="number" 
+                            placeholder="time limit" 
+                            min="1"
+                            max="10"
+                            value="1"
+                            onchange="set_time_adjuster(event)"                        
+                            style="float:right; padding-right: 10px;">
+                        </ons-input>
+                    </ons-col>
+                </ons-row>
+
+                <ons-list>
+                    <ons-list-header>Pager limit</ons-list-header>
+                    <ons-list-item tappable>
+                        <label class="right">
+                            <ons-radio name="pager" input-id="radio-1" onchange="set_radio_pager(10)"></ons-radio>
+                        </label>
+                        <label for="radio-1" class="center">
+                            10
+                        </label>
+                    </ons-list-item>
+                    <ons-list-item tappable>
+                        <label class="right">
+                            <ons-radio name="pager" input-id="radio-2" onchange="set_radio_pager(50)"></ons-radio>
+                        </label>
+                        <label for="radio-2" class="center">
+                            50
+                        </label>
+                    </ons-list-item>
+                </ons-list>
+            </div>
+        </ons-page>
+    </template>
+    <template id="password.html">
+        <ons-page id="password">
+            <ons-toolbar>
+                <div class="left toolbar__left">
+                    <ons-toolbar-button onclick="fn.open()" class="toolbar-button">
+                        <ons-icon icon="md-menu" class="ons-icon zmdi zmdi-menu"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+                <div class="center toolbar__center toolbar__title">
+                    <span id="heading_pass">Change Password</span>
+                </div>                
+            </ons-toolbar>
+
+            <div class="carlist" style="display: block">
+                <div style="text-align: center; margin-top: 30px;">
+                    <p>
+                    <ons-input id="cur_username" modifier="underbar" placeholder="Username" float></ons-input>
+                    </p>
+                    <p>
+                    <ons-input id="cur_password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+                    </p>
+                    <p>
+                    <ons-input id="new_password" modifier="underbar" type="password" placeholder="New Password" float></ons-input>
+                    </p>
+                    <p style="margin-top: 30px;">
+                    <ons-button onclick="set_password()">Submit</ons-button>
+                    </p>
+                </div>
+            </div>
+        </ons-page>
+    </template>
+
+
+
+    <ons-modal direction="up" id="loading_circle">
+        <div style="text-align: center">
+            <p>
+            <ons-icon icon="md-spinner" size="28px" spin></ons-icon> Loading...
+            </p>
+        </div>
+    </ons-modal>
+
+    <ons-modal direction="up" id="remarkModal">
+        <div style="text-align: center;">
+            <p>
+                <label class="lotid">Remarks</label>            
+            </p>
+            <textarea class="textarea" id="buyer_remark_text" rows="5" placeholder="Remarks"></textarea>
+            <p>
+            <ons-button onmousedown="save_remarks()">Submit</ons-button>
+            </p>
+            <p>
+                <button onclick="window.plugins.socialsharing.shareViaWhatsApp('Message via WhatsApp', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">WhatsApp</button>
+            </p>
+            <p>
+            <ons-button onmousedown="close_modals()">Close</ons-button>
+            </p>
+
+        </div>
+    </ons-modal> 
+
+
+</body>
+</html>

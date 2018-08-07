@@ -1,0 +1,27 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-custom-config": {
+      "PACKAGE_NAME": "com.janjapanweb.ajpage"
+    },
+    "cordova-plugin-datepicker": {
+      "PACKAGE_NAME": "com.janjapanweb.ajpage"
+    },
+    "cordova-plugin-firebase": {
+      "PACKAGE_NAME": "com.janjapanweb.ajpage"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.janjapanweb.ajpage"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.janjapanweb.ajpage"
+    }
+  },
+  "dependent_plugins": {}
+}
